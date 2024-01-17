@@ -1,0 +1,17 @@
+from django.shortcuts import render
+from django.http import HttpResponse
+
+# Create your views here.
+def index(request):
+    return render(
+        request,
+        'mainpage/index.html'
+    )
+    
+
+def company_description(request):
+    return render(
+        request,
+        'company_description.html'
+    )
+      

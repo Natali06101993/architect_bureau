@@ -1,0 +1,24 @@
+.sail  {
+   
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #81817c; 
+    font-family: ‘Trocchi’, serif; 
+    font-size: 25px; 
+    font-weight: normal; 
+    text-decoration: none;
+
+}
+a {
+    text-decoration: none;
+  
+}
+header {
+    text-align: center;
+    width: 30vw;
+    margin-top: 50;
+}
+/* p {
+    padding: 0;
+    margin: 0;
+} */
