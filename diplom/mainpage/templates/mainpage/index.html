@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'style/layout.css' %}">
+    <link rel="stylesheet" href="{% static 'style/menu.css' %}">
     <title>Document</title>
 </head>
 
@@ -12,12 +13,28 @@
 
 
     <header>
-        {% comment %} <a href='company_description.html'> {% endcomment %}
-        <a href='{% url 
-        mainpage:company_description.html}'>
-        <p class="sail">SAIL</p><p class='sail'>ARCHITEСTS</p>
+        <a  href="/company">
+
+        <p class="sail">SAIL</p><p class="sail">ARCHITECTS</p>   
 
         </a>
+
+    
+
+        <div class="site_menu">
+            <ul>
+                <li><a href ="#">Бюро</a></li>
+                <li><a href ="#">Проекты</a></li>
+                <li><a href ="#">Контакты</a></li>
+                <li><a href ="#">Видео</a></li>
+            </ul>
+            
+        </div>
+    
+   
+        
+       
+         
     </header>
 
 

@@ -12,6 +12,6 @@ def index(request):
 def company_description(request):
     return render(
         request,
-        'company_description.html'
+        'mainpage/company_description.html'
     )
       

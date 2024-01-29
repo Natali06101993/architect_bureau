@@ -1,0 +1,25 @@
+
+
+* {
+    padding:0;
+ 
+}
+
+
+.site_menu li{
+    display: inline-block;
+    margin-right: 30px;
+    transform: translate(150px, 20px); 
+}
+
+.site_menu a{
+    font-family: ‘Trocchi’, serif; 
+    font-size: 15px;
+    color: #81817c; 
+    
+    
+}
+
+.site_menu a:hover{
+    color: #000;
+} 
