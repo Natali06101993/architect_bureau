@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'style/layout.css' %}">
     <link rel="stylesheet" href="{% static 'style/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'style/photo_carousel.css' %}">
+    <script src="{% static 'scripts/carus.js' %}"> </script>
     <title>Document</title>
 </head>
 
@@ -29,16 +31,25 @@
                 <li><a href ="#">Видео</a></li>
             </ul>
             
-        </div>
-    
-   
-        
-       
+        </div>    
          
+        <div class="btn" id="b1" onclick="set_picture('1.jpeg')"></div>
+        <div class="btn" id="b2" onclick="set_picture('2.jpeg')"></div>
+        <div class="btn" id="b3" onclick="set_picture('3.jpeg')"></div>
+        
+        {% comment %} <a href="#">
+            <img src="{% static "img/4.jpg" %}" width="350" height="300">
+          </a>
+        
+        <a href="#">
+            <img src="{% static "img/5.jpg" %}" width="350" height="300">
+          </a>
+        
+        <a href="#">
+            <img src="{% static "img/5.jpg" %}" width="350" height="300">
+          </a> {% endcomment %}
+        {% comment %} <img src='{% static "img/4.jpg" %}'> {% endcomment %}
     </header>
-
-
-
 
 </body>
 </html>
