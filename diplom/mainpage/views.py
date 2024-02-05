@@ -15,3 +15,16 @@ def company_description(request):
         'mainpage/company_description.html'
     )
       
+      
+def my_project1(request):
+    return render(
+        request,
+        'mainpage/my_project1.html'
+    )
+      
+def my_project2(request):
+    return render(
+        request,
+        'mainpage/my_project2.html'
+    )
+   

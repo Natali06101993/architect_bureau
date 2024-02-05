@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="{% static 'style/layout.css' %}">
     <link rel="stylesheet" href="{% static 'style/menu.css' %}">
     <link rel="stylesheet" href="{% static 'style/photo_carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'style/style_my_project1.css' %}">
     <script src="{% static 'scripts/carus.js' %}"> </script>
     <title>Document</title>
 </head>
@@ -37,18 +38,24 @@
         <div class="btn" id="b2" onclick="set_picture('2.jpeg')"></div>
         <div class="btn" id="b3" onclick="set_picture('3.jpeg')"></div>
         
-        <a href="#">
-            <img src="{% static "img/4.jpg" %}" width="350" height="300">
+        <a href="/project1">
+            <img src="{% static "img/4.jpg" %}" class="avatar_my_project1" width="350" height="300">   
           </a>
-        
-        <a href="#">
+        <p>конкурсный проект</p>
+        <a href="/project2">
             <img src="{% static "img/5.jpg" %}" width="350" height="300">
           </a>
         
-        <a href="#">
+        <a href="/project2">
             <img src="{% static "img/5.jpg" %}" width="350" height="300">
-          </a> 
+        </a>
+        
+        <a href="/project2">
+            <img src="{% static "img/5.jpg" %}" width="350" height="300">
+        </a>
+         
        
+
     </header>
 
 </body>
