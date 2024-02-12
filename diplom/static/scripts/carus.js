@@ -1,15 +1,15 @@
 window.addEventListener(
     'load',
     () => {
-        document.body.style.backgroundImage = 'url(/static/img/1.png)'
+        bigpic.style.backgroundImage = 'url(/static/img/1.png)'
     }
 );
 
 function set_picture(season) {
-    var old_pic = document.body.style.backgroundImage;
-    console.log(document.body.style.backgroundImage);
+    var old_pic = bigpic.style.backgroundImage;
+    console.log(bigpic.style.backgroundImage);
     console.log(`url("img/${season}")`);
-    var anim = document.body.animate(
+    var anim = bigpic.animate(
         [
           { backgroundImage: `url("/static/img/${season}")` }
         ],
@@ -18,6 +18,6 @@ function set_picture(season) {
     setTimeout(() => {
         anim.pause();
         console.log('stopped');
-        document.body.style.backgroundImage = `url("/static/img/${season}")`;
+        bigpic.style.backgroundImage = `url("/static/img/${season}")`;
     }, 2999);
 }

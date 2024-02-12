@@ -1,3 +1,6 @@
+#bigpic {
+    height: 500px;
+}
 body {
     background-position:center;
     background-position-y: 50vh;
@@ -18,5 +21,6 @@ body {
     border: 1px solid black;
     width: 2vw;
     height: 2vh;
+    background-color: grey;
     
 }

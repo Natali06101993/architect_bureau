@@ -18,3 +18,12 @@ header {
     margin-top: 50;
 }
 
+.kotiki {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;  
+}
+.glavniy_cotic { 
+    margin-top: 6vw;
+
+}

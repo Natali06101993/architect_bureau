@@ -27,4 +27,4 @@ def my_project2(request):
         request,
         'mainpage/my_project2.html'
     )
-   
+

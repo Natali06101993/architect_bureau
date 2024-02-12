@@ -4,9 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style/layout.css' %}">
+    <link rel="stylesheet" href="{% static 'style/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'style/working_projects2.css' %}">
     <title>Document</title>
 </head>
 <body>
-    <p>мой проект номер 2</p>
+
+    <a  href="/company">
+        <p class="sail">SAIL</p><p class="sail">ARCHITECTS</p>   
+    </a>
+
+    <div class="site_menu">
+        <ul>
+            <li><a href ="#">Бюро</a></li>
+            <li><a href ="#">Проекты</a></li>
+            <li><a href ="#">Контакты</a></li>
+            <li><a href ="#">Видео</a></li>
+        </ul>
+        
+    </div> 
+
+    <div class="graduation_project">
+        <img src="{% static "img/14.png" %}" width="800" height="500">
+    </div>
+
+    <div class="graduation_project">
+        <img src="{% static "img/15.png" %}" width="800" height="500">
+    </div>
+   
+    <div class="graduation_project">
+        <img src="{% static "img/16.png" %}" width="800" height="500">
+    </div>
+
+    
+
+
+   
 </body>
 </html>
