@@ -1,8 +1,5 @@
 <form action="путь" method="post">
 {% csrf_token %}
-    <label >имя</label>
-    <input name="name">
-    <label for="">телефон</label>
-    <input name="phone">
+    {{ my_client_form }}
     <button type="submit">отправить</button>
 </form>

@@ -1,6 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-from django.shortcuts import render
+from .forms import MyClientForm
 
 
 # Create your views here.
@@ -10,6 +9,16 @@ def index(request):
         'mainpage/index.html'
     )
     
+def form(request):
+    print('kuku')
+    print(MyClientForm())
+    return render(
+        request,
+        'mainpage/form.html',
+        {
+            'my_client_form': MyClientForm()
+        }
+    )
 
 def company_description(request):
     return render(
