@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="{% static 'style/photo_carousel.css' %}">
     <link rel="stylesheet" href="{% static 'style/working_projects1.css' %}">
     <link rel="stylesheet" href="{% static 'style/working_projects2.css'%}">
-    <link rel="stylesheet" href="{% static 'style/icon.css'%}">
-    <script src="{% static 'scripts/carus.js' %}"> </script>
-    <script src="{% static 'scripts/videojs.js' %}"> </script>
+    <link rel="stylesheet" href="{% static 'style/video.css'%}">
+    <link rel="stylesheet" href="{% static 'style/map.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Document</title>
+    <script src="{% static 'scripts/carousel.js'%}"></script>
+    
 </head>
 
 <body>
@@ -19,73 +21,147 @@
 
 
     <header>
-        <a  href="/company">
+     <!-- иконки соц сетей -->
 
+        <div class="icon">
+        <a href=""><i class="fab fa-instagram"></i></a><!-- Иконка Instagram -->
+        <a href=""><i class="fab fa-telegram"></i></a> <!-- Иконка Instagram -->
+        </div>
+    
+        <!-- логотип сайта -->
+        <a  href="/company">
         <p class="sail">SAIL</p><p class="sail">ARCHITECTS</p> 
-        
         </a>
 
-   
 
-
-
-    
-
+         <!-- меню сайта -->
         <div class="site_menu">
             <ul>
                 <li><a href ="#">Бюро</a></li>
                 <li><a href ="#">Проекты</a></li>
                 <li><a href ="#">Контакты</a></li>
                 <li><a href ="#">Видео</a></li>
-            </ul>
-            
-        </div>    
-         <div id="bigpic">
-        <div class="btn" id="b1" onclick="set_picture('1.jpeg')"></div>
-        <div class="btn" id="b2" onclick="set_picture('2.jpeg')"></div>
-        <div class="btn" id="b3" onclick="set_picture('3.jpeg')"></div>
+            </ul> 
+        </div>  
+    </header>
+        
+          <!-- фото карусель -->
+          <div class="slideshow">
+            <div class="slideshow-item">
+                <img src="{% static "img/1.jpeg" %}" alt="">
+                <div class="slideshow-item-text">
+                    <h5>Проект 1</h5>
+                    <p>Описание проекта 1</p>
+                </div>
+            </div>
+            <div class="slideshow-item">
+                <img src="{% static "img/2.jpeg" %}" alt="">
+                <div class="slideshow-item-text">
+                    <h5>Проект 2</h5>
+                    <p>Описание проекта 2</p>
+                </div>
+            </div>
+            <div class="slideshow-item">
+                <img src="{% static "img/3.jpeg" %}" alt="">
+                <div class="slideshow-item-text">
+                    <h5>Проект 3</h5>
+                    <p>Описание проекта 3</p>
+                </div>
+            </div>
+            <div class="slideshow-item">
+                <img src="{% static "img/4.jpeg" %}" alt="">
+                <div class="slideshow-item-text">
+                    <h5>Проект 4</h5>
+                    <p>Описание проекта 4</p>            
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- <--иконки всех проектов котыре дедали,при нажатии открывают полностью проект --> 
+        <div class="projects">
+            <div class="project">
+                
+            <a href="/project1"><img src="{% static "img_project/4.png" %}" width="450" height="300"><p>Частый дом</p></a>
+                
+            <a href="/project2"><img src="{% static "img_project/5.png" %}" width="450" height="300"><p>Конкурсный проект</p></a>
+        </div> 
+        
+        
+        
+        <div class="projects1">
+            <div class="project1">
+                
+            <a href="/project1"><img src="{% static "img_project/10.6.jpeg" %}" width="450" height="300"><p>Центр международной торговли</p></a>
+                
+            <a href="/project2"><img src="{% static "img_project/10.7.jpeg" %}" width="450" height="300"><p>Баня на Эльбрусе</p></a>
+        </div> 
+
+        
+        <!-- тег видео  -->
+     <div class="video">
+        <video width="800" height="300" controls>
+        <source src="{% static 'video/city.mp4' %}" type="video/mp4">
+        </video>
     </div>
 
-
-    <div class="glavniy_cotic">
-        <div class="kotiki"><a href="/project1"><img src="{% static "img/4.jpg" %}" width="350" height="300"><p>краткое описание проекта</p></a>
-             
-
-            <a href="/project2"><img src="{% static "img/5.jpg" %}" width="350" height="300"> <p>краткое описание проекта</p></a>
-        
-        </div>
-        
-        <div class="kotiki"><a href="/project1"><img src="{% static "img/4.jpg" %}" width="350" height="300"><p>краткое описание проекта</p></a>
-
-            <a href="/project2"><img src="{% static "img/5.jpg" %}" width="350" height="300"><p>краткое описание проекта</p></a>
-        
-        </div>
-
-        <div class="kotiki"><a href="/project1"><img src="{% static "img/4.jpg" %}" width="350" height="300"><p>краткое описание проекта</p></a>
-
-            <a href="/project2"><img src="{% static "img/5.jpg" %}" width="350" height="300"><p>краткое описание проекта</p></a>
-        
-        </div>
-    </div>
+   
 
 
 
-        
-    <video width="800" height="300" controls>
-        <source src="{% static 'video/44.mp4' %}" type="video/mp4">
-    </video>
-      
+
+<!-- 
+{% comment %}       
      <h1> наши координаты </h1>
      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, modi animi! Dolorum eum architecto animi libero sint, accusantium ipsa ipsum! Itaque, in nemo porro provident amet ipsam quo quasi sapiente.</p>
      <a href="tel:89996999889">9=89999999999</a>
      <h2>мы находимся здесь</h2>
      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A17880fd0a8821584c6057efa9476da4fb14e055d6334f413e19399bb7396fb3c&amp;width=400&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
-    </header>
+    </header> {% endcomment %} -->
 
 
-    <div class="icon"><a href="/vk"><img src="{% static "img/icon2.png" %}" width="40" height="40"></a>
+    <!-- <div class="icon"><a href="/vk"><img src="{% static "img/icon2.png" %}" width="40" height="40"></a>
 
         <a href="/fb"><img src="{% static "img/icon1.png" %}" width="40" height="40"></a>
+    </div> -->
+
+    <footer style="display: grid; grid-template-columns: 8fr 5fr ;">
+        <div class="contacts">
+        <p class='about_as'>АДРЕСС:</p>
+        <p class='information'>НОВОЧЕРЕМУШКИНСКАЯ 52К2</p>
+        
+        <p class='about_as'>ПОЧТА:</p>
+        <p class='information'><a href="mailto:nata_93_06@mail.ru">nata_93_06@mail.ru</a></p>
+        
+        <p class='about_as'>ТЕЛЕФОН:</p>
+        <p class='information'><a href="tel:+79997190649">+7(999)719-06-49</a></p>
+
+        <p class='about_as'>СОЦИАЛЬНЫЕ СЕТИ:</p>
+        <p class='information'><a href="https://t.me/+79998127516">TELEGRAM</a></p>
+
     </div>
+
+        <div>
+            <img src="{% static "img_project/map.png" %}" width="600" height="350">
+        </div> 
+         <div>
+    </footer> 
+        
+     
+
+
+
+        
+    
+
+    </footer>
+
+     <!-- <p>москва {%for datetime in get_current_year%}
+        {{datetime}}
+        {%endfor%} -->
+     </p>
+   
+     
+    
 </body>
 </html>

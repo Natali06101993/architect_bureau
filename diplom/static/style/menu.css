@@ -13,13 +13,13 @@
 }
 
 .site_menu a{
-    font-family: ‘Trocchi’, serif; 
+    font-family: 'proxima-nova', sans-serif; 
     font-size: 20px;
-    color: #81817c; 
+    color: black;
     
     
 }
 
 .site_menu a:hover{
-    color: #000;
+    color: #f7f1f1;
 } 

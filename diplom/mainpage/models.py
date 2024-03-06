@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+class MyClient(models.Model):
+    name = models.CharField(max_length=64)
+    phone = models.IntegerField()
+    tgid = models.IntegerField(null=True)

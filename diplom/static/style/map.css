@@ -1,0 +1,60 @@
+footer {
+
+    padding: 5px;
+    background-color: #d0d2d7;
+    color: #fff;
+    margin: 200px ;
+  }
+
+p {
+    text-align: left;
+    margin-right: 5px;
+}
+
+.about_as{
+    font-family: 'proxima-nova', sans-serif;
+    color: #8e8f91;
+    
+    font-size: 10px;
+    font-weight:700;
+}
+
+
+
+a{
+    color: rgb(6, 6, 6);
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 12px;
+    font-weight:700;
+
+   
+
+}
+
+.adres{
+    font-family: 'proxima-nova', sans-serif;
+    color: rgb(6, 6, 6);
+    font-size: 12px;
+    font-weight:700;
+}
+.information{
+    font-family: 'proxima-nova', sans-serif;
+    color: rgb(6, 6, 6);
+    font-size: 12px;
+    padding-bottom: 4px;
+    font-weight:700;
+
+}
+
+.contacts{
+    padding-top: 20px;
+}
+
+.yamap {
+    top: 50px;
+    position: relative;
+}
+
+.contacts.navigation{
+    
+}
